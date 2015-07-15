@@ -1,0 +1,192 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RadioFM-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-P IC1
+U 1 1 55A3157F
+P 3350 2700
+F 0 "IC1" H 2600 3950 40  0000 L BNN
+F 1 "ATMEGA328-P" H 3750 1300 40  0000 L BNN
+F 2 "DIL28" H 3350 2700 30  0000 C CIN
+F 3 "" H 3350 2700 60  0000 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 1600 0    60   Input ~ 0
+VCC
+Text GLabel 1300 3800 0    60   Input ~ 0
+GND
+$Comp
+L VCC #PWR027
+U 1 1 55A316EA
+P 1350 1450
+F 0 "#PWR027" H 1350 1300 50  0001 C CNN
+F 1 "VCC" H 1350 1600 50  0000 C CNN
+F 2 "" H 1350 1450 60  0000 C CNN
+F 3 "" H 1350 1450 60  0000 C CNN
+	1    1350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 55A31700
+P 1450 3950
+F 0 "#PWR028" H 1450 3700 50  0001 C CNN
+F 1 "GND" H 1450 3800 50  0000 C CNN
+F 2 "" H 1450 3950 60  0000 C CNN
+F 3 "" H 1450 3950 60  0000 C CNN
+	1    1450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3800 2450 3800
+Wire Wire Line
+	2450 3900 2300 3900
+Wire Wire Line
+	2300 3900 2300 3800
+Connection ~ 2300 3800
+Wire Wire Line
+	1450 3950 1450 3800
+Connection ~ 1450 3800
+Connection ~ 1350 1600
+Wire Wire Line
+	1350 1450 1350 1600
+$Comp
+L Crystal_Small Y1
+U 1 1 55A31773
+P 1050 6400
+F 0 "Y1" H 1050 6500 50  0000 C CNN
+F 1 "16MHz" H 1050 6300 50  0000 C CNN
+F 2 "" H 1050 6400 60  0000 C CNN
+F 3 "" H 1050 6400 60  0000 C CNN
+	1    1050 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C11
+U 1 1 55A3185E
+P 1000 6650
+F 0 "C11" H 1010 6720 50  0000 L CNN
+F 1 "22u" H 1010 6570 50  0000 L CNN
+F 2 "" H 1000 6650 60  0000 C CNN
+F 3 "" H 1000 6650 60  0000 C CNN
+	1    1000 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C12
+U 1 1 55A31907
+P 1200 6550
+F 0 "C12" H 1210 6620 50  0000 L CNN
+F 1 "22u" H 1210 6470 50  0000 L CNN
+F 2 "" H 1200 6550 60  0000 C CNN
+F 3 "" H 1200 6550 60  0000 C CNN
+	1    1200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 55A31A35
+P 1000 6850
+F 0 "#PWR029" H 1000 6600 50  0001 C CNN
+F 1 "GND" H 1000 6700 50  0000 C CNN
+F 2 "" H 1000 6850 60  0000 C CNN
+F 3 "" H 1000 6850 60  0000 C CNN
+	1    1000 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 55A31A53
+P 1200 6750
+F 0 "#PWR030" H 1200 6500 50  0001 C CNN
+F 1 "GND" H 1200 6600 50  0000 C CNN
+F 2 "" H 1200 6750 60  0000 C CNN
+F 3 "" H 1200 6750 60  0000 C CNN
+	1    1200 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 6000 1000 6550
+Connection ~ 1000 6500
+Wire Wire Line
+	1150 6400 1200 6400
+Connection ~ 1200 6400
+Wire Wire Line
+	1000 6750 1000 6850
+Wire Wire Line
+	1200 6650 1200 6750
+Wire Wire Line
+	1000 6500 1050 6500
+Wire Wire Line
+	1200 5900 1200 6450
+Text Label 800  5900 0    60   ~ 0
+XTAL1
+Text Label 1200 5900 0    60   ~ 0
+XTAL2
+Wire Wire Line
+	4350 2200 4700 2200
+Wire Wire Line
+	4350 2300 4700 2300
+Text Label 4700 2200 0    60   ~ 0
+XTAL1
+Text Label 4700 2300 0    60   ~ 0
+XTAL2
+$Comp
+L R_Small R11
+U 1 1 55A3246D
+P 1850 1600
+F 0 "R11" H 1880 1620 50  0000 L CNN
+F 1 "100k" H 1880 1560 50  0000 L CNN
+F 2 "" H 1850 1600 60  0000 C CNN
+F 3 "" H 1850 1600 60  0000 C CNN
+	1    1850 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 1600 2450 1600
+Wire Wire Line
+	1300 1600 1750 1600
+$EndSCHEMATC

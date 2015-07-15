@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADP150
+D Ultralow Noise,150 mA CMOS Linear Regulator
+F Datasheets/ADP150-279215.pdf
+$ENDCMP
+#
+$CMP MCP73831
+D Miniature Single Cell, Fully Integrated Li-Ion,Li-Polymer Charge Management Controller
+K Accus, Supply, Li-ion, Li-PO
+F Datasheets/MCP73831.pdf
+$ENDCMP
+#
+#End Doc Library
